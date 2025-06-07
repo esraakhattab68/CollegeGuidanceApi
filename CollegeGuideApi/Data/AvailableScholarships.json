@@ -1,0 +1,107 @@
+[
+  {
+    "Name": "Government and National Programs",
+    "Items": [
+      {
+        "Name": "Ministry of Higher Education Scholarships",
+        "Details": "• Scholarships for postgraduate study abroad (Master's/PhD)\n• Partnered with countries like Germany, Japan, and China\n• Often fully funded (tuition, travel, and living expenses)"
+      },
+      {
+        "Name": "STDF (Science and Technology Development Fund)",
+        "Details": "• Supports top-performing Egyptian students in science & engineering\n• Focus on innovation and research"
+      },
+      {
+        "Name": "Tahya Misr Scholarships",
+        "Details": "• For high-achieving students in public schools who cannot afford tuition\n• Offers full tuition coverage at Egyptian private universities"
+      },
+      {
+        "Name": "The Presidential Scholarship for Excellence",
+        "Details": "• Targets exceptional students in science, technology, and medicine\n• Includes study opportunities abroad or in elite national programs"
+      }
+    ]
+  },
+  {
+    "Name": "Al-Azhar Scholarships",
+    "Items": [
+      {
+        "Name": "Al-Azhar Scholarships",
+        "Details": "• Offered to Egyptian and international students\n• Covers Islamic studies and Arabic language programs\n• Includes tuition, housing, and monthly stipend"
+      }
+    ]
+  },
+  {
+    "Name": "University-Specific Scholarships",
+    "Items": [
+      {
+        "Name": "American University in Cairo (AUC)",
+        "Details": "• Need-based and merit scholarships\n• “Leadership for Education and Development” (LEAD) program\n• Covers full tuition + housing + monthly stipend"
+      },
+      {
+        "Name": "German University in Cairo (GUC)",
+        "Details": "• Offers partial to full scholarships for top Thanaweya Amma and IG students"
+      },
+      {
+        "Name": "British University in Egypt (BUE)",
+        "Details": "• Offers academic excellence scholarships"
+      },
+      {
+        "Name": "Nile University",
+        "Details": "• Provides full and partial scholarships for engineering, IT, and business students"
+      },
+      {
+        "Name": "Zewail City of Science and Technology",
+        "Details": "• Offers full scholarships for top science students"
+      },
+      {
+        "Name": "Future University, MSA, October 6 University",
+        "Details": "• Many private universities offer discounts and scholarships for top scorers or siblings"
+      }
+    ]
+  },
+  {
+    "Name": "International Scholarships for Egyptians",
+    "Items": [
+      {
+        "Name": "USAID Egyptian Pioneers Program",
+        "Details": "• Full scholarships for undergraduate and postgraduate studies in Egypt or the U.S."
+      },
+      {
+        "Name": "DAAD (Germany)",
+        "Details": "• Scholarships for Egyptian graduates to study Master's/PhD in Germany"
+      },
+      {
+        "Name": "Fulbright (USA)",
+        "Details": "• For postgraduate studies and cultural exchange"
+      },
+      {
+        "Name": "Chevening (UK)",
+        "Details": "• Full scholarships for 1-year Master's degrees in the UK"
+      },
+      {
+        "Name": "Japanese Government (MEXT)",
+        "Details": "• For undergraduate and graduate study in Japan"
+      },
+      {
+        "Name": "Erasmus+ (EU)",
+        "Details": "• Exchange programs and Master's scholarships in Europe"
+      }
+    ]
+  },
+  {
+    "Name": "NGO and Charity-Based Scholarships",
+    "Items": [
+      {
+        "Name": "Misr El-Kheir Foundation",
+        "Details": "• Scholarships for underprivileged high-achievers\n• Covers fees, housing, and personal expenses"
+      },
+      {
+        "Name": "Sawiris Foundation",
+        "Details": "• Full scholarships to AUC, Nile University, and study abroad\n• Includes entrepreneurship and STEM focus"
+      },
+      {
+        "Name": "Egyptian Banks (like Banque Misr)",
+        "Details": "• Scholarships for students in business, IT, and finance"
+      }
+    ]
+  }
+]

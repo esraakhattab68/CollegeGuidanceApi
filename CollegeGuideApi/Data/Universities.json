@@ -1,0 +1,80 @@
+[
+  {
+    "Name": "Nahda University",
+    "CityId": 5,
+    "Description": "Al -Nahda University was established in the center of the new eastern Beni Suef, on the Cairo -Beni Suef Road. The moment we realized the extent of the interest that education needs, especially in Upper Egypt, is the same moment that we realized that our dream of building Al -Nahda University can be achieved.",
+    "PhoneNumber": "19206",
+    "Logo": "Nahda-University.png",
+    "Website": "https://www.nub.edu.eg/",
+    "Email": "Info@nub.edu.eg",
+    "Facebook": "https://www.facebook.com/nub.edu.eg",
+    "X": "https://x.com/nub_edu?mx=2",
+    "Instagram": "https://instagram.com/nub_edu?mx=2",
+    "Youtube": "https://www.youtube.com/@nahdauniversity563"
+  },
+  {
+    "Name": "TNI المعهد العالي التكنولوجي للتمريض ببني سويف",
+    "CityId": 5,
+    "Description": "A scientific giant in northern Upper Egypt, the Technological Institute of Nursing in Beni Suef was established by Ministerial Decree No. 3773 of 2021 to provide a distinguished educational service that combines the latest study methods and technologies with the actual needs of the labor market, making it the first institute of its kind in Upper Egypt.",
+    "PhoneNumber": "01008880598",
+    "Logo": "TNI.png",
+    "Website": "https://tni-bns.com",
+    "Email": "info@tni-bns.com",
+    "Facebook": "https://www.facebook.com/profile.php?id=100075817464676&ref=embed_page#",
+    "X": null,
+    "Instagram": null,
+    "Youtube": null
+  },
+  {
+    "Name": "The Higher Institute of Administrative Sciences in Beni Suef",
+    "CityId": 5,
+    "Description": "The Higher Institute of Administrative Sciences in Beni Suef aims to prepare specialized professionals in management and accounting. The institute grants a Bachelor’s degree accredited by the Ministry of Higher Education.",
+    "PhoneNumber": "01228144000",
+    "Logo": "MSA.png",
+    "Website": "https://www.msa-bns.com/",
+    "Email": "info@msa-bns-.com",
+    "Facebook": "https://m.facebook.com/msaacdmey",
+    "X": null,
+    "Instagram": "https://www.instagram.com/explore/locations/630359339/",
+    "Youtube": "https://youtube.com/channel/UCf0d2h4pNQtpAJd21b7z0HA?si=sOqzv0WXbLnuuADr"
+  },
+  {
+    "Name": "Egyptian E-Learning University",
+    "CityId": 5,
+    "Description": "The Egyptian E-Learning University was established as the first Egyptian university to adopt the principle of e-learning. In 2018, Presidential Decree No. 71 was issued to transform the university from a private university to a private university with the aim of providing educational services to all Egyptian governorates with the highest levels of quality, and at a socially appropriate cost.",
+    "PhoneNumber": "16541",
+    "Logo": "EELU.png",
+    "Website": "https://www.eelu.edu.eg",
+    "Email": "info@eelu.edu.eg",
+    "Facebook": "https://www.facebook.com/egyptelu",
+    "X": "https://x.com/egyptelu",
+    "Instagram": "https://www.instagram.com/egyptelu",
+    "Youtube": "https://www.youtube.com/@egyptelu"
+  },
+  {
+    "Name": "Beni Suef National University",
+    "CityId": 5,
+    "Description": "Beni Suef Private University was established according to the latest smart university systems in terms of providing technical equipment. It includes a number of administrative and academic buildings for medical, engineering, and humanities sectors, laboratory and workshop buildings, housing for male and female students, academic and administrative squares, and recreational and sports areas.",
+    "PhoneNumber": null,
+    "Logo": "Beni-Suef-National-University.png",
+    "Website": "http://www.nu.bsu.edu.eg",
+    "Email": "info@bns.edu.eg",
+    "Facebook": "https://www.facebook.com/BSNU.EDU.EG",
+    "X": "https://x.com/bsnueg",
+    "Instagram": null,
+    "Youtube": "https://www.youtube.com/channel/UCjDXCxKNvGM44aBMlWG33Ig"
+  },
+  {
+    "Name": "Higher Technological Institute for Applied Health Sciences",
+    "CityId": 5,
+    "Description": "The Higher Institute for Applied Health Sciences in Beni Suef aims to prepare professional cadres in the field of applied medical sciences. This is achieved by providing a developed academic environment with programs that encourage science, technology, and innovation. The institute is committed to producing and marketing knowledge to develop and improve various health services, thereby achieving sustainable development that enhances society and human well-being.",
+    "PhoneNumber": "01019588188",
+    "Logo": "HSI.png",
+    "Website": "https://www.hsi-bns.com/",
+    "Email": "info@msa-bns.com",
+    "Facebook": "https://www.facebook.com/share/1AxWkftpYN/?mibextid=wwXIfr",
+    "X": null,
+    "Instagram": null,
+    "Youtube": null
+  }
+]

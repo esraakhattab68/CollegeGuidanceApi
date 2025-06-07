@@ -1,0 +1,330 @@
+[
+  {
+    "Title": "Business Consultant, Human Resources Manager, Project Manager, Entrepreneur, University Professor or Researcher",
+    "DepartmentId": 1
+  },
+  {
+    "Title": "Accountant, Financial Analyst, University Professor or Researcher",
+    "DepartmentId": 2
+  },
+  {
+    "Title": "Marketing Manager, Sales Manager, Security Consultant, University Professor or Researcher",
+    "DepartmentId": 3
+  },
+  {
+    "Title": "Financial Analyst, University Professor or Researcher",
+    "DepartmentId": 4
+  },
+  {
+    "Title": "General Practitioner (GP), Public Health Specialist, Hospital Administrator, Medical Researcher or University Professor",
+    "DepartmentId": 5
+  },
+  {
+    "Title": "Surgeon, Hospital Administrator, Medical Researcher or University Professor",
+    "DepartmentId": 6
+  },
+  {
+    "Title": "Pediatrician, Public Health Specialist, Medical Researcher or University Professor",
+    "DepartmentId": 7
+  },
+  {
+    "Title": "Radiologist, Medical Imaging Specialist, Medical Researcher or University Professor",
+    "DepartmentId": 8
+  },
+  {
+    "Title": "Anesthesiologist, Medical Researcher or University Professor",
+    "DepartmentId": 9
+  },
+  {
+    "Title": "Hospital Administrator, Public Health Specialist",
+    "DepartmentId": 10
+  },
+  {
+    "Title": "Clinical Pharmacist, Hospital Pharmacist, University Professor or Researcher",
+    "DepartmentId": 11
+  },
+  {
+    "Title": "Industrial Pharmacist, Drug Quality Control Specialist, Pharmaceutical Sales Representative",
+    "DepartmentId": 12
+  },
+  {
+    "Title": "Hospital Pharmacist, Clinical Pharmacist, Security Consultant, University Professor or Researcher",
+    "DepartmentId": 13
+  },
+  {
+    "Title": "Research Pharmacist, Toxicologist, University Professor or Researcher",
+    "DepartmentId": 14
+  },
+  {
+    "Title": "General Dentist, Dental Public Health Specialist, Dental Researcher or University Professor",
+    "DepartmentId": 15
+  },
+  {
+    "Title": "Orthodontist, Dental Researcher or University Professor",
+    "DepartmentId": 16
+  },
+  {
+    "Title": "Oral Surgeon, Dental Researcher or University Professor",
+    "DepartmentId": 17
+  },
+  {
+    "Title": "Dental Public Health Specialist, Dental Researcher or University Professor",
+    "DepartmentId": 18
+  },
+  {
+    "Title": "Endodontist, Dental Researcher or University Professor",
+    "DepartmentId": 19
+  },
+  {
+    "Title": "Physical Therapist (Physiotherapist), Geriatric Physical Therapist, Pediatric Physical Therapist, Occupational Therapist, University Professor or Researcher",
+    "DepartmentId": 20
+  },
+  {
+    "Title": "Sports Rehabilitation Specialist, Physical Therapist, Occupational Therapist, University Professor or Researcher",
+    "DepartmentId": 21
+  },
+  {
+    "Title": "Physical Therapist, Occupational Therapist, Geriatric Physical Therapist, University Professor or Researcher",
+    "DepartmentId": 22
+  },
+  {
+    "Title": "Neurological Physical Therapist, Orthopedic Physical Therapist, Occupational Therapist, University Professor or Researcher",
+    "DepartmentId": 23
+  },
+  {
+    "Title": "Software Developer, Web & Mobile App Developer, Game Developer, Cloud Engineer, IT Consultant, University Professor or Researcher",
+    "DepartmentId": 24
+  },
+  {
+    "Title": "Cybersecurity Specialist, Network Engineer, IT Consultant, University Professor or Researcher",
+    "DepartmentId": 25
+  },
+  {
+    "Title": "AI & Machine Learning Engineer, Data Scientist, Software Developer (AI-focused), University Professor or Researcher",
+    "DepartmentId": 26
+  },
+  {
+    "Title": "Data Scientist, Database Administrator, AI & Machine Learning Engineer, University Professor or Researcher",
+    "DepartmentId": 27
+  },
+  {
+    "Title": "IT Consultant, Network Engineer, Database Administrator, Cloud Engineer, University Professor or Researcher",
+    "DepartmentId": 28
+  },
+  {
+    "Title": "Civil Engineer, Structural Engineer, Project Manager, University Professor or Researcher",
+    "DepartmentId": 29
+  },
+  {
+    "Title": "Mechanical Engineer, Robotics Engineer, Project Manager, University Professor or Researcher",
+    "DepartmentId": 30
+  },
+  {
+    "Title": "Electrical Engineer, Project Manager, Software Engineer, University Professor or Researcher",
+    "DepartmentId": 31
+  },
+  {
+    "Title": "Mechatronics Engineer, Robotics Engineer, Software Engineer, Project Manager, University Professor or Researcher",
+    "DepartmentId": 32
+  },
+  {
+    "Title": "Telecommunications Engineer, Network Engineer, Project Manager, University Professor or Researcher",
+    "DepartmentId": 33
+  },
+  {
+    "Title": "Journalist, News Reporter, Scriptwriter, University Professor or Researcher",
+    "DepartmentId": 34
+  },
+  {
+    "Title": "TV & Radio Presenter, News Reporter, Film & Video Editor, Scriptwriter, University Professor or Researcher",
+    "DepartmentId": 35
+  },
+  {
+    "Title": "Public Relations Specialist, Social Media Manager, Security Consultant, University Professor or Researcher",
+    "DepartmentId": 36
+  },
+  {
+    "Title": "Digital Content Creator, Social Media Manager, Film & Video Editor, Scriptwriter, University Professor or Researcher",
+    "DepartmentId": 37
+  },
+  {
+    "Title": "Advertising Specialist, Digital Content Creator, Social Media Manager, Scriptwriter, University Professor or Researcher",
+    "DepartmentId": 38
+  },
+  {
+    "Title": "Graphic Designer, Art Director, Illustrator, Digital Artist, Photographer, University Professor or Researcher",
+    "DepartmentId": 39
+  },
+  {
+    "Title": "Interior Designer, Architect, 3D Modeler & Animator, Art Director, University Professor or Researcher",
+    "DepartmentId": 40
+  },
+  {
+    "Title": "Illustrator, Digital Artist, Art Director, Sculptor, University Professor or Researcher",
+    "DepartmentId": 41
+  },
+  {
+    "Title": "Digital Artist, 3D Modeler & Animator, Graphic Designer, Photographer, University Professor or Researcher",
+    "DepartmentId": 42
+  },
+  {
+    "Title": "Art Director, Graphic Designer, Fashion Designer, Illustrator, University Professor or Researcher",
+    "DepartmentId": 43
+  },
+  {
+    "Title": "Neonatal Intensive Care Unit (NICU) Nurse, Pediatric Nurse, Neonatal Nurse Practitioner (NNP), Lactation Consultant, Neonatal Transport Nurse, Public Health Nurse specializing in maternal and infant care",
+    "DepartmentId": 44
+  },
+  {
+    "Title": "Emergency Room (ER) Nurse, Intensive Care Unit (ICU) Nurse, Trauma Nurse, Flight Nurse (Air Ambulance), Critical Care Transport Nurse, Disaster Response Nurse, Nurse Practitioner in Emergency or Critical Care",
+    "DepartmentId": 45
+  },
+  {
+    "Title": "IT Consultant, Network Engineer, System Engineer",
+    "DepartmentId": 46
+  },
+  {
+    "Title": "Machine Learning Engineer, NLP Engineer, Computer Vision Engineer",
+    "DepartmentId": 47
+  },
+  {
+    "Title": "Marketing Manager, Human Resources Manager",
+    "DepartmentId": 48
+  },
+  {
+    "Title": "General Practitioner, Consultant in Medical Specialties",
+    "DepartmentId": 49
+  },
+  {
+    "Title": "General Surgeon, Surgical Oncologist",
+    "DepartmentId": 50
+  },
+  {
+    "Title": "Pharmaceutical Researcher, Quality Control Analyst",
+    "DepartmentId": 51
+  },
+  {
+    "Title": "Clinical Pharmacist, Pharmacotherapy Specialist",
+    "DepartmentId": 52
+  },
+  {
+    "Title": "Management Accountant, Financial Analyst",
+    "DepartmentId": 53
+  },
+  {
+    "Title": "Investment Banker",
+    "DepartmentId": 54
+  },
+  {
+    "Title": "Lawyer, Legal Manager",
+    "DepartmentId": 55
+  },
+  {
+    "Title": "International Lawyer, Corporate Law Specialist",
+    "DepartmentId": 56
+  },
+  {
+    "Title": "Legal Translator, International Arbitration Specialist",
+    "DepartmentId": 57
+  },
+  {
+    "Title": "General Dentist, Orthodontist",
+    "DepartmentId": 58
+  },
+  {
+    "Title": "Oral and Maxillofacial Surgeon",
+    "DepartmentId": 59
+  },
+  {
+    "Title": "Physical Therapist, Rehabilitation Specialist",
+    "DepartmentId": 60
+  },
+  {
+    "Title": "Sports Rehabilitation Therapist, Pediatric Physical Therapist",
+    "DepartmentId": 61
+  },
+  {
+    "Title": "Clinical Biochemist, Biotechnologist",
+    "DepartmentId": 62
+  },
+  {
+    "Title": "Petroleum Engineer, Geologist",
+    "DepartmentId": 63
+  },
+  {
+    "Title": "Penetration Tester, Network Engineer",
+    "DepartmentId": 64
+  },
+  {
+    "Title": "Machine Learning Engineer, NLP Engineer, Computer Vision Engineer",
+    "DepartmentId": 65
+  },
+  {
+    "Title": "Medical Software Development",
+    "DepartmentId": 66
+  },
+  {
+    "Title": "Architect, Human Resources Manager",
+    "DepartmentId": 67
+  },
+  {
+    "Title": "Renewable Energy Engineer, Energy Storage Engineer",
+    "DepartmentId": 68
+  },
+  {
+    "Title": "Structural Engineer",
+    "DepartmentId": 69
+  },
+  {
+    "Title": "Digital Journalist, Content Editor",
+    "DepartmentId": 70
+  },
+  {
+    "Title": "Television or Film Director, Television/Film Producer",
+    "DepartmentId": 71
+  },
+  {
+    "Title": "Healthcare Manager, Nursing Director",
+    "DepartmentId": 72
+  },
+  {
+    "Title": "Critical Care Nurse, Emergency Room Nurse",
+    "DepartmentId": 73
+  },
+  {
+    "Title": "Pediatric Nurse, Neonatal Nurse",
+    "DepartmentId": 74
+  },
+  {
+    "Title": "Cartographer, Urban Planner",
+    "DepartmentId": 75
+  },
+  {
+    "Title": "Clinical Psychologist, Psychotherapist",
+    "DepartmentId": 76
+  },
+  {
+    "Title": "Financial Data Analyst",
+    "DepartmentId": 77
+  },
+  {
+    "Title": "Marketing Manager, social media manager",
+    "DepartmentId": 78
+  },
+  {
+    "Title": "financial analyst, financial manager",
+    "DepartmentId": 79
+  },
+  {
+    "Title": "Clinical Microbiologist, Medical Laboratory Technologist",
+    "DepartmentId": 80
+  },
+  {
+    "Title": "Vision Science Specialist, Optometrist",
+    "DepartmentId": 81
+  },
+  {
+    "Title": "Prosthodontic Technician, Dental Prosthetist",
+    "DepartmentId": 82
+  }
+]

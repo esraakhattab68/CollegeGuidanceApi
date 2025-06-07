@@ -1,0 +1,330 @@
+[
+  {
+    "Name": "Business Administration",
+    "CollegeId": 1
+  },
+  {
+    "Name": " Accounting",
+    "CollegeId": 1
+  },
+  {
+    "Name": "Marketing and E-Commerce",
+    "CollegeId": 1
+  },
+  {
+    "Name": "Bank Administration and Financial Markets",
+    "CollegeId": 1
+  },
+  {
+    "Name": "General Medicine",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Surgery",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Pediatrics",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Radiology",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Anesthesia",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Emergency Medicine",
+    "CollegeId": 2
+  },
+  {
+    "Name": "Clinical Pharmacy",
+    "CollegeId": 3
+  },
+  {
+    "Name": "Pharmaceutical Industry",
+    "CollegeId": 3
+  },
+  {
+    "Name": "Hospital Pharmacy",
+    "CollegeId": 3
+  },
+  {
+    "Name": " Research and Development",
+    "CollegeId": 3
+  },
+  {
+    "Name": "General Dentistry",
+    "CollegeId": 4
+  },
+  {
+    "Name": "Orthodontics",
+    "CollegeId": 4
+  },
+  {
+    "Name": "Oral Surgery",
+    "CollegeId": 4
+  },
+  {
+    "Name": "Pediatric Dentistry",
+    "CollegeId": 4
+  },
+  {
+    "Name": "Endodontics",
+    "CollegeId": 4
+  },
+  {
+    "Name": "Physical Therapy Clinics",
+    "CollegeId": 5
+  },
+  {
+    "Name": "Sports Rehabilitation",
+    "CollegeId": 5
+  },
+  {
+    "Name": "Hospital Rehabilitation Units",
+    "CollegeId": 5
+  },
+  {
+    "Name": "Neurological and Orthopedic Physiotherapy",
+    "CollegeId": 5
+  },
+  {
+    "Name": " Software Development",
+    "CollegeId": 6
+  },
+  {
+    "Name": "Cyber Security",
+    "CollegeId": 6
+  },
+  {
+    "Name": "Artificial Intelligence",
+    "CollegeId": 6
+  },
+  {
+    "Name": "Data Science",
+    "CollegeId": 6
+  },
+  {
+    "Name": "IT Management",
+    "CollegeId": 6
+  },
+  {
+    "Name": " Civil Engineering",
+    "CollegeId": 7
+  },
+  {
+    "Name": "Mechanical Engineering",
+    "CollegeId": 7
+  },
+  {
+    "Name": "Electrical Engineering",
+    "CollegeId": 7
+  },
+  {
+    "Name": " Mechatronics",
+    "CollegeId": 7
+  },
+  {
+    "Name": "Telecommunications",
+    "CollegeId": 7
+  },
+  {
+    "Name": " Journalism",
+    "CollegeId": 8
+  },
+  {
+    "Name": "Broadcasting",
+    "CollegeId": 8
+  },
+  {
+    "Name": "Public Relations",
+    "CollegeId": 8
+  },
+  {
+    "Name": "Digital Media",
+    "CollegeId": 8
+  },
+  {
+    "Name": "Advertising",
+    "CollegeId": 8
+  },
+  {
+    "Name": " Graphic Design",
+    "CollegeId": 9
+  },
+  {
+    "Name": "Interior Design",
+    "CollegeId": 9
+  },
+  {
+    "Name": "Painting and Sculpture",
+    "CollegeId": 9
+  },
+  {
+    "Name": " Digital Arts",
+    "CollegeId": 9
+  },
+  {
+    "Name": "Art Direction",
+    "CollegeId": 9
+  },
+  {
+    "Name": "Neonatal Nursing",
+    "CollegeId": 10
+  },
+  {
+    "Name": "Critical Care & Emergency Nursing",
+    "CollegeId": 10
+  },
+  {
+    "Name": "Information Technology",
+    "CollegeId": 11
+  },
+  {
+    "Name": "Artificial Intelligence",
+    "CollegeId": 11
+  },
+  {
+    "Name": "Business Administration",
+    "CollegeId": 12
+  },
+  {
+    "Name": "General Medicine",
+    "CollegeId": 13
+  },
+  {
+    "Name": "Surgery",
+    "CollegeId": 13
+  },
+  {
+    "Name": "Pharmaceutical Sciences",
+    "CollegeId": 14
+  },
+  {
+    "Name": "Clinical Pharmacy",
+    "CollegeId": 14
+  },
+  {
+    "Name": "Accounting",
+    "CollegeId": 15
+  },
+  {
+    "Name": "International Finance",
+    "CollegeId": 15
+  },
+  {
+    "Name": "Arabic Section",
+    "CollegeId": 16
+  },
+  {
+    "Name": "English Section",
+    "CollegeId": 16
+  },
+  {
+    "Name": "French Section",
+    "CollegeId": 16
+  },
+  {
+    "Name": "General Dentistry",
+    "CollegeId": 17
+  },
+  {
+    "Name": "Oral Surgery",
+    "CollegeId": 17
+  },
+  {
+    "Name": "Physical Therapy Clinics",
+    "CollegeId": 18
+  },
+  {
+    "Name": "Hospital Rehabilitation Units",
+    "CollegeId": 18
+  },
+  {
+    "Name": "Biochemistry",
+    "CollegeId": 19
+  },
+  {
+    "Name": "Geology, Mining, and Petroleum",
+    "CollegeId": 19
+  },
+  {
+    "Name": "Cyber Security",
+    "CollegeId": 20
+  },
+  {
+    "Name": "Artificial Intelligence",
+    "CollegeId": 20
+  },
+  {
+    "Name": "Medical Informatics",
+    "CollegeId": 20
+  },
+  {
+    "Name": "Architectural Engineering",
+    "CollegeId": 21
+  },
+  {
+    "Name": "Renewable Energy Engineering",
+    "CollegeId": 21
+  },
+  {
+    "Name": "Civil Engineering",
+    "CollegeId": 21
+  },
+  {
+    "Name": "Digital Journalism and Television",
+    "CollegeId": 22
+  },
+  {
+    "Name": "Television and Film Production",
+    "CollegeId": 22
+  },
+  {
+    "Name": "Nursing Services Administration",
+    "CollegeId": 23
+  },
+  {
+    "Name": "Critical Care and Emergency Nursing",
+    "CollegeId": 23
+  },
+  {
+    "Name": "Pediatric Nursing",
+    "CollegeId": 23
+  },
+  {
+    "Name": "Geographical Information Systems (GIS)",
+    "CollegeId": 24
+  },
+  {
+    "Name": "Clinical Psychology",
+    "CollegeId": 24
+  },
+  {
+    "Name": "Accounting",
+    "CollegeId": 25
+  },
+  {
+    "Name": "Marketing and E-Commerce",
+    "CollegeId": 25
+  },
+  {
+    "Name": "Finance and Investment",
+    "CollegeId": 25
+  },
+  {
+    "Name": "Medical Laboratories (Medical Bacteriology)",
+    "CollegeId": 26
+  },
+  {
+    "Name": "Optics and Vision Sciences",
+    "CollegeId": 26
+  },
+  {
+    "Name": "Dental Prosthetics",
+    "CollegeId": 26
+  }
+]
