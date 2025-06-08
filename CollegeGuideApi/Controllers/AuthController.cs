@@ -7,6 +7,10 @@ using CollegeGuideApi.DTOs.Authentication.Responses;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Identity;
+using CollegeGuideApi.Models.Entities;
+using CollegeGuideApi.DTOs.Authentication;
+using Microsoft.EntityFrameworkCore;
 
 namespace CollegeGuideApi.Controllers
 {
@@ -23,8 +27,10 @@ namespace CollegeGuideApi.Controllers
             _authService = authService;
             _logger = logger;
             _configuration = configuration;
+
         }
 
+        
         #region Register
 
         [HttpPost("register")]

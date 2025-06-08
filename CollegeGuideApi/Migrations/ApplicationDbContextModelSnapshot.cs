@@ -493,9 +493,9 @@ namespace CollegeGuideApi.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ace9a1d-bcb7-4b9f-8477-13968c5ffea6",
+                            ConcurrencyStamp = "14d47841-7dc8-4784-b5df-9d260c71645a",
                             ConfirmPassword = "ES@Khattab682003",
-                            CreatedAt = new DateTime(2025, 6, 7, 6, 48, 41, 665, DateTimeKind.Utc).AddTicks(9316),
+                            CreatedAt = new DateTime(2025, 6, 8, 8, 51, 23, 894, DateTimeKind.Utc).AddTicks(5269),
                             Email = "esraakhattab068@gmail.com",
                             EmailConfirmed = true,
                             FName = "Esraa",
@@ -504,9 +504,9 @@ namespace CollegeGuideApi.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ESRAAKHATTAB068@GMAIL.COM",
                             NormalizedUserName = "ADMIN_ESRAA_KHATTAB",
-                            PasswordHash = "$2a$11$pObNESr7.YLCuVB1ugSgheOIGt2gLthIAJC1eZMBLzBj/tQOzHNVe",
+                            PasswordHash = "$2a$11$PssDsNGJKGhN51f5RB782u3QrGBvFBJkyhVxSOZshIDeFlWgSg0ay",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "798213e8-f28d-4e6f-ab3c-f93250fbad6e",
+                            SecurityStamp = "00f71135-2d0c-48eb-b344-c43dc3039ba3",
                             TwoFactorEnabled = false,
                             UserName = "admin_esraa_khattab",
                             UserType = "Admin"

@@ -1,15 +1,16 @@
-﻿using CollegeGuideApi.DTOs.DashboardDtos;
+﻿// using statements...
+using CollegeGuideApi.DTOs.DashboardDtos;
 using CollegeGuideApi.Interfaces;
 using CollegeGuideApi.Models.DbContexts;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace CollegeGuideApi.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     [ApiController]
+    [Authorize] 
     public class DashboardController : ControllerBase
     {
         private readonly IDashboardService _dashboardService;
@@ -52,5 +53,6 @@ namespace CollegeGuideApi.Controllers
 
             return Ok(colleges);
         }
+
     }
 }

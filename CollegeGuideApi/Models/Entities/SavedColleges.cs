@@ -1,4 +1,6 @@
-﻿namespace CollegeGuideApi.Models.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CollegeGuideApi.Models.Entities
 {
     public class SavedColleges
     {

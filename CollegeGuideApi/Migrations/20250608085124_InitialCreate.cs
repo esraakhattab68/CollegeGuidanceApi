@@ -306,7 +306,7 @@ namespace CollegeGuideApi.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "ConfirmPassword", "CreatedAt", "Discriminator", "Email", "EmailConfirmed", "FName", "IsExternalLogin", "LName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName", "UserType" },
-                values: new object[] { 1, 0, "2ace9a1d-bcb7-4b9f-8477-13968c5ffea6", "ES@Khattab682003", new DateTime(2025, 6, 7, 6, 48, 41, 665, DateTimeKind.Utc).AddTicks(9316), "Admin", "esraakhattab068@gmail.com", true, "Esraa", false, "Khattab", false, null, "ESRAAKHATTAB068@GMAIL.COM", "ADMIN_ESRAA_KHATTAB", "$2a$11$pObNESr7.YLCuVB1ugSgheOIGt2gLthIAJC1eZMBLzBj/tQOzHNVe", null, false, "798213e8-f28d-4e6f-ab3c-f93250fbad6e", false, "admin_esraa_khattab", "Admin" });
+                values: new object[] { 1, 0, "14d47841-7dc8-4784-b5df-9d260c71645a", "ES@Khattab682003", new DateTime(2025, 6, 8, 8, 51, 23, 894, DateTimeKind.Utc).AddTicks(5269), "Admin", "esraakhattab068@gmail.com", true, "Esraa", false, "Khattab", false, null, "ESRAAKHATTAB068@GMAIL.COM", "ADMIN_ESRAA_KHATTAB", "$2a$11$PssDsNGJKGhN51f5RB782u3QrGBvFBJkyhVxSOZshIDeFlWgSg0ay", null, false, "00f71135-2d0c-48eb-b344-c43dc3039ba3", false, "admin_esraa_khattab", "Admin" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Colleges_UniversityId",

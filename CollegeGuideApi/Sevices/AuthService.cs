@@ -50,14 +50,12 @@ namespace CollegeGuideApi.Sevices
         }
 
         #region Register
+
         public async Task<ApiResponse<string>> RegisterAsync(SignUpRequestDTO dto)
         {
+           
             if (dto.Password != dto.Password)
                 return ApiResponse<string>.FailureResponse("Passwords do not match.");
-
-            var allowedUserTypes = new[] { "Student", "Parent" };
-            if (!allowedUserTypes.Contains(dto.UserType))
-                return ApiResponse<string>.FailureResponse("Invalid user type.");
 
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 return ApiResponse<string>.FailureResponse("Email is already registered.");
@@ -68,7 +66,7 @@ namespace CollegeGuideApi.Sevices
                 LName = dto.LastName,
                 Email = dto.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-                UserType = dto.UserType,
+                UserType = dto.UserType.ToString(),
                 IsExternalLogin = false,
                 EmailConfirmed = false
             };
@@ -77,7 +75,6 @@ namespace CollegeGuideApi.Sevices
             await _context.SaveChangesAsync();
 
             var otp = GenerateOtp();
-
             var existing = await _context.EmailVerifications.FirstOrDefaultAsync(e => e.Email == dto.Email);
             if (existing != null)
                 _context.EmailVerifications.Remove(existing);
@@ -101,6 +98,59 @@ namespace CollegeGuideApi.Sevices
 
             return ApiResponse<string>.SuccessResponse("Verify your Email. Enter OTP sent to your Email.");
         }
+
+
+        //public async Task<ApiResponse<string>> RegisterAsync(SignUpRequestDTO dto)
+        //{
+        //    if (dto.Password != dto.Password)
+        //        return ApiResponse<string>.FailureResponse("Passwords do not match.");
+
+        //    var allowedUserTypes = new[] { "Student", "Parent" };
+        //    if (!allowedUserTypes.Contains(dto.UserType))
+        //        return ApiResponse<string>.FailureResponse("Invalid user type.");
+
+        //    if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
+        //        return ApiResponse<string>.FailureResponse("Email is already registered.");
+
+        //    var user = new ApplicationUser
+        //    {
+        //        FName = dto.FirstName,
+        //        LName = dto.LastName,
+        //        Email = dto.Email,
+        //        PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+        //        UserType = dto.UserType,
+        //        IsExternalLogin = false,
+        //        EmailConfirmed = false
+        //    };
+
+        //    _context.Users.Add(user);
+        //    await _context.SaveChangesAsync();
+
+        //    var otp = GenerateOtp();
+
+        //    var existing = await _context.EmailVerifications.FirstOrDefaultAsync(e => e.Email == dto.Email);
+        //    if (existing != null)
+        //        _context.EmailVerifications.Remove(existing);
+
+        //    _context.EmailVerifications.Add(new EmailVerification
+        //    {
+        //        Email = dto.Email,
+        //        Otp = otp,
+        //        ExpirationTime = DateTime.UtcNow.AddMinutes(10)
+        //    });
+
+        //    await _context.SaveChangesAsync();
+        //    var htmlBody = File.ReadAllText("Templates/EmailOtpTemplate.html").Replace("{{OTP}}", otp);
+
+        //    await mailService.SendEmailAsync(new MailRequest
+        //    {
+        //        ToEmail = dto.Email,
+        //        Subject = "Verification Code",
+        //        Body = htmlBody
+        //    });
+
+        //    return ApiResponse<string>.SuccessResponse("Verify your Email. Enter OTP sent to your Email.");
+        //}
         private string GenerateOtp()
         {
             var random = new Random();

@@ -141,6 +141,8 @@ namespace CollegeGuideApi
                     });
             });
 
+           
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline
@@ -185,6 +187,7 @@ namespace CollegeGuideApi
                     logger.LogError(ex, "An error occurred during data seeding.");
                 }
             }
+                
 
             app.Run();
         }
