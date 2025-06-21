@@ -187,6 +187,48 @@ namespace CollegeGuideApi.Sevices
         }
         #endregion
 
+        #region Resend Otp[register]
+        public async Task<ApiResponse<string>> ResendOtpAsync(string email)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return ApiResponse<string>.FailureResponse("User with this email does not exist.");
+            }
+
+            if (user.EmailConfirmed)
+            {
+                return ApiResponse<string>.FailureResponse("This email has already been verified.");
+            }
+
+            var existingOtp = await _context.EmailVerifications.FirstOrDefaultAsync(e => e.Email == email);
+            if (existingOtp != null)
+            {
+                _context.EmailVerifications.Remove(existingOtp);
+            }
+
+            var newOtp = GenerateOtp();
+            _context.EmailVerifications.Add(new EmailVerification
+            {
+                Email = email,
+                Otp = newOtp,
+                ExpirationTime = DateTime.UtcNow.AddMinutes(10)
+            });
+
+            await _context.SaveChangesAsync();
+
+            var htmlBody = File.ReadAllText("Templates/EmailOtpTemplate.html").Replace("{{OTP}}", newOtp);
+            await mailService.SendEmailAsync(new MailRequest
+            {
+                ToEmail = email,
+                Subject = "Your New Verification Code",
+                Body = htmlBody
+            });
+
+            return ApiResponse<string>.SuccessResponse("A new OTP has been sent to your email.");
+        }
+        #endregion
+
         #region Login
         public async Task<ApiResponse<string>> LoginAsync(LoginRequestDTO loginRequestDTO)
         {
@@ -532,6 +574,64 @@ namespace CollegeGuideApi.Sevices
         }
         #endregion
 
+        #region Resend OTP [Forget Password]
+        public async Task<ApiResponse<string>> ResendForgotPasswordOtpAsync(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                return ApiResponse<string>.FailureResponse("Email address is required.");
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+
+            if (user == null)
+            {
+                return ApiResponse<string>.SuccessResponse("If an account with that email exists, a new OTP has been sent.");
+            }
+
+            var existingOtpRecords = _context.EmailVerifications
+                .Where(e => e.Email == email && !e.IsUsed);
+            if (existingOtpRecords.Any())
+            {
+                _context.EmailVerifications.RemoveRange(existingOtpRecords);
+            }
+
+            var otp = GenerateOtp(); 
+
+            _context.EmailVerifications.Add(new EmailVerification
+            {
+                Email = email,
+                Otp = otp,
+                ExpirationTime = DateTime.UtcNow.AddMinutes(OtpExpirationMinutes), 
+                IsUsed = false
+            });
+
+            await _context.SaveChangesAsync();
+
+            string htmlBody;
+            string passwordResetTemplatePath = "Templates/PasswordResetOtpTemplate.html";
+            if (File.Exists(passwordResetTemplatePath))
+            {
+                htmlBody = await File.ReadAllTextAsync(passwordResetTemplatePath);
+                htmlBody = htmlBody.Replace("{{OTP}}", otp);
+            }
+            else
+            {
+                htmlBody = $"<p>Your new One-Time Password (OTP) for password reset is: <strong>{otp}</strong></p><p>This OTP is valid for {OtpExpirationMinutes} minutes.</p>";
+                _logger.LogWarning($"Warning: PasswordResetOtpTemplate.html not found. Using default email body.");
+            }
+
+            await mailService.SendEmailAsync(new MailRequest
+            {
+                ToEmail = email,
+                Subject = "Your New Password Reset OTP", 
+                Body = htmlBody
+            });
+
+            return ApiResponse<string>.SuccessResponse("A new OTP has been sent to your email.");
+        }
+        #endregion
+
         #region Reset Password 
         public async Task<ApiResponse<string>> ResetPasswordAsync(ResetPasswordRequestDTO dto)
         {
@@ -748,6 +848,50 @@ namespace CollegeGuideApi.Sevices
             });
 
             return ApiResponse<string>.SuccessResponse("OTP sent to your new email address. Please verify to complete the change.");
+        }
+
+        public async Task<ApiResponse<string>> ResendEmailChangeOtpAsync(int userId, string newEmail)
+        {
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return ApiResponse<string>.FailureResponse("User not found.");
+            }
+
+            var existingOtpRequest = await _context.EmailVerifications
+                .FirstOrDefaultAsync(ev => ev.UserId == userId &&
+                                            ev.Email == newEmail &&
+                                            ev.Purpose == "EmailChange");
+
+            if (existingOtpRequest == null)
+            {
+                return ApiResponse<string>.FailureResponse("No pending email change request found for this address. Please initiate a new request.");
+            }
+
+            _context.EmailVerifications.Remove(existingOtpRequest);
+
+            var newOtp = GenerateOtp();
+
+            _context.EmailVerifications.Add(new EmailVerification
+            {
+                Email = newEmail,
+                Otp = newOtp,
+                ExpirationTime = DateTime.UtcNow.AddMinutes(10), 
+                Purpose = "EmailChange",
+                UserId = userId
+            });
+
+            await _context.SaveChangesAsync();
+
+            var htmlBody = File.ReadAllText("Templates/EmailOtpTemplate.html").Replace("{{OTP}}", newOtp);
+            await mailService.SendEmailAsync(new MailRequest
+            {
+                ToEmail = newEmail,
+                Subject = "Your New Email Confirmation OTP",
+                Body = htmlBody
+            });
+
+            return ApiResponse<string>.SuccessResponse("A new OTP has been sent to your new email address.");
         }
 
         public async Task<ApiResponse<string>> ConfirmEmailChangeAsync(int userIdPerformingChange, ConfirmEmailChangeRequestDTO dto)

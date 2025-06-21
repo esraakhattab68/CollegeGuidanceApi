@@ -8,6 +8,7 @@ namespace CollegeGuideApi.Interfaces
         #region Register
         Task<ApiResponse<string>> RegisterAsync(SignUpRequestDTO dto);
         Task<ApiResponse<string>> VerifyOtpAsync(string email, string otp);
+        Task<ApiResponse<string>> ResendOtpAsync(string email);
         #endregion
 
         #region Login
@@ -22,6 +23,7 @@ namespace CollegeGuideApi.Interfaces
         #region Forget Password
         Task<ApiResponse<string>> ForgotPasswordAsync(ForgotPasswordRequestDTO dto);
         Task<ApiResponse<string>> VerifyOtpAsync(VerifyOtpRequestDTO dto);
+        Task<ApiResponse<string>> ResendForgotPasswordOtpAsync(string email);
         Task<ApiResponse<string>> ResetPasswordAsync(ResetPasswordRequestDTO dto);
         #endregion
 
@@ -34,6 +36,7 @@ namespace CollegeGuideApi.Interfaces
         Task<ApiResponse<UserProfileResponseDTO>> GetUserProfileAsync(int userId);
         Task<ApiResponse<UserProfileResponseDTO>> UpdateProfileNamesAsync(int userId, UpdateProfileNamesRequestDTO dto);
         Task<ApiResponse<string>> RequestEmailChangeAsync(int userId, RequestEmailChangeRequestDTO dto);
+        Task<ApiResponse<string>> ResendEmailChangeOtpAsync(int userId, string newEmail);
         Task<ApiResponse<string>> ConfirmEmailChangeAsync(int userId, ConfirmEmailChangeRequestDTO dto);
         Task<ApiResponse<string>> ChangePhoneNumberAsync(int userId, ChangePhoneNumberRequestDTO dto);
         #endregion

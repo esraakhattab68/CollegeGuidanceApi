@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CollegeGuideApi.Controllers
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class FinancialAidController : ControllerBase
     {

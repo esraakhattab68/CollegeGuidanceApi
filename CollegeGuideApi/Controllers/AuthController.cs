@@ -61,6 +61,17 @@ namespace CollegeGuideApi.Controllers
             }
 
         }
+
+        [HttpPost("resend-otp")]
+        public async Task<IActionResult> ResendOtp(ResendOtpRequestDto dto)
+        {
+            var result = await _authService.ResendOtpAsync(dto.Email);
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
         #endregion
 
         #region Login
@@ -131,6 +142,28 @@ namespace CollegeGuideApi.Controllers
             {
                 return Ok(response);
             }
+            return BadRequest(response);
+        }
+
+
+        [HttpPost("resend-forgot-password-otp")]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ResendForgotPasswordOtp([FromBody] ResendOtpRequestDto dto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ApiResponse<string>.FailureResponse("Invalid request data.", GetModelStateErrors()));
+            }
+
+            _logger.LogInformation("Resend OTP for forgot password request received for email: {Email}", dto.Email);
+            var response = await _authService.ResendForgotPasswordOtpAsync(dto.Email);
+
+            if (response.Success)
+            {
+                return Ok(response);
+            }
+
             return BadRequest(response);
         }
 
@@ -257,6 +290,35 @@ namespace CollegeGuideApi.Controllers
                 return BadRequest(response);
             }
             return Ok(response);
+        }
+
+        [HttpPost("resend-email-change-otp")]
+        [Authorize] 
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse<string>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ResendEmailChangeOtp([FromBody] ResendOtpRequestDto dto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ApiResponse<string>.FailureResponse("Invalid request data.", GetModelStateErrors()));
+            }
+
+            var userId = GetCurrentUserId();
+            if (userId == 0)
+            {
+                return Unauthorized(ApiResponse<string>.FailureResponse("User is not authenticated."));
+            }
+
+            _logger.LogInformation("Resend OTP for email change request received for user {UserId} to new email {Email}", userId, dto.Email);
+
+            var response = await _authService.ResendEmailChangeOtpAsync(userId, dto.Email);
+
+            if (response.Success)
+            {
+                return Ok(response);
+            }
+
+            return BadRequest(response);
         }
 
         [HttpPost("confirm-email-change")]
